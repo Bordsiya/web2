@@ -1,0 +1,41 @@
+body {
+    background-color: #393e46;
+    font-family: monospace;
+    color: black;
+    padding: 0;
+    font-size: 20px;
+    margin: 2%;
+}
+
+a {
+    color: #eeeeee;
+}
+
+/*-----------------блок table----------------*/
+
+.table_area {
+    display: flex;
+    justify-content: center;
+}
+
+.table_area_table {
+    width: 83%;
+    height: 600px;
+    overflow: auto;
+}
+
+#res_table {
+    width: 100%;
+    border: 1px solid grey;
+    border-collapse: collapse;
+    background-color: #eeeeee;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    border: 1px solid grey;
+    padding: 10px;
+    font-size: 20px;
+}
+

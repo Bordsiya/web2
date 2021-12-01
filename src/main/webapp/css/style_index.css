@@ -1,0 +1,150 @@
+body {
+    background-color: #393e46;
+    font-family: monospace;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+body span { 
+    font-weight: bold;
+}
+
+/*-------Главный контейнер--------*/
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*---------2 основных блока----------*/
+.header {
+    background-color: #eeeeee;
+    margin: 1%;
+    /*border-radius: 24px;*/
+}
+
+.content {
+    margin: 5%;
+}
+
+
+/*------------блок header-------------*/
+.student_info {
+    width: 32%;
+    padding: 5px;
+    background-color: #eeeeee;
+}
+
+
+/*-------------блок content----------------*/
+.input_content, .picture_content {
+    background-color: #eeeeee;
+    width: 550px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*border-radius: 24px;*/
+}
+
+.input_content > form{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+form > .input_content_input, form > .input_content_select, form > .input_content_buttons {
+    display: flex;
+    padding: 2%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.input_content_buttons_columns {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+form > .send_btn_area, .clear_btn_area {
+    text-align: center;
+    /*
+    display: flex;
+    justify-content: center;
+     */
+}
+
+
+.picture_content {
+    text-align: center;
+}
+
+svg {
+    display: block;
+    margin: auto;
+}
+
+.error_msg {
+    color: red;
+}
+
+/*-----------------Кнопки---------------------*/
+.btn_structure {
+    border-radius: 6px;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.choose_btn {
+    transition-duration: 0.4s;
+    padding: 4px;
+    width: 130px;
+}
+
+.send_btn, .clear_btn {
+    background-color: #eeeeee;
+    border-color: gray;
+    padding: 10px;
+    width: 80%;
+
+}
+
+.send_btn:active, .clear_btn:active {
+    box-shadow: 0 3px 0 #161b13;
+}
+
+
+.choose_btn:hover, .send_btn:hover, .active_btn, .clear_btn:hover {
+    background-color: #393e46;
+    color: white;
+}
+
+
+/*-----------Прочие дизайны-------------*/
+select {
+    width: 80px;
+    padding: 4px;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+input {
+    width: 100px;
+    padding: 4px;
+    font-family: monospace;
+    font-size: 18px;
+    margin-left: 3px;
+}
+
+input:focus {
+    border-color: #393e46;
+  }
